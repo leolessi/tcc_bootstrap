@@ -1,0 +1,179 @@
+/* estilos gerais do body */
+body {
+    background-color: white;
+}
+
+.container {
+    padding: 0;
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10%;
+}
+
+/* estilos dos links do header */
+.links-inicio {
+    color: #766695;
+    font-size: 1.5rem;
+    pointer-events: initial;
+}
+
+.link-cadastro {
+    color: white;
+    pointer-events: initial;
+    text-decoration: none;
+}
+
+.link-login {
+    color: #766695;
+    pointer-events: initial;
+    text-decoration: none;
+}
+
+/* estilos dos botões */
+.btn-login {
+    color: #766695;
+    border-color: #766695;
+}
+
+.btn-cadastro {
+    background-color: #766695;
+    color: white;
+    border-color: #766695;
+}
+
+/* estilos tratamentos */
+.head-tratamentos {
+    color: #766695;
+    font-size: 4rem;
+    /* text-align: center; */
+}
+
+/* estilos do footer */
+
+
+
+/* ---------------------------------------------------- # Services -----------------------------------------------------*/
+.services .icon-box {
+    text-align: center;
+    border: 1px solid #ebebeb;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: var(--white);
+}
+
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: var(--main-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.services .icon-box .icon i {
+    color: var(--dark-text);
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #695D86;
+}
+
+.services .icon-box h4 a {
+    color: var(--dark-text);
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box h4 a:hover {
+    color: var(--main-color);
+}
+
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #695D86;
+}
+
+.services .icon-box:hover {
+    border-color: var(--white);
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    padding-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaa;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.section-title p {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: var(--dark-text);
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.headSobreNos {
+    color: #695D86;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+
+/* página login */
+
+.form-container {
+    max-width: 350px;
+    padding: 1rem;
+}
+
+.logo-login {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* página cadastro */
