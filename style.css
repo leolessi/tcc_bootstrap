@@ -177,3 +177,6 @@ body {
 }
 
 /* página cadastro */
+.conditional-input {
+    display: none;
+}

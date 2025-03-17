@@ -1,325 +1,623 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Avaliação Capilar</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .conditional-input {
-            display: none;
-        }
-    </style>
-</head>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container mt-5">
-        <a href="./index.html">
-            <img src="./assets/images/logo_ja_tricologia_terapia_capilar-removebg-preview.png"
-                class="mb-4 logo-login d-block mx-auto logo-cadastro" height="200" width="200" />
-        </a>
-        <h2>Formulário de Avaliação Capilar</h2>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="nomeCompleto">Nome completo:</label>
-                    <input type="text" class="form-control" id="nomeCompleto" required>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="dataNascimento">Data de nascimento:</label>
-                    <input type="date" class="form-control" id="dataNascimento" required>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="celular">Celular:</label>
-                    <input type="tel" class="form-control" id="celular" required>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="email">E-mail:</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group col-md-3">
-                    <label for="profissao">Profissão:</label>
-                    <input type="text" class="form-control" id="profissao" required>
-                </div>
-                <div class="form-group col-md-5">
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" class="form-control" id="endereco" required>
-                </div>
-            </div>
+      <a href="./index.html">
+        <img
+          src="./assets/images/logo_ja_tricologia_terapia_capilar-removebg-preview.png"
+          class="mb-4 logo-login d-block mx-auto logo-cadastro"
+          height="200"
+          width="200"
+        />
+      </a>
+      <h2>Formulário de Avaliação Capilar</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="nomeCompleto">Nome completo:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nomeCompleto"
+              required
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="dataNascimento">Data de nascimento:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="dataNascimento"
+              required
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="celular">Celular:</label>
+            <input type="tel" class="form-control" id="celular" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="profissao">Profissão:</label>
+            <input type="text" class="form-control" id="profissao" required />
+          </div>
+          <div class="form-group col-md-5">
+            <label for="endereco">Endereço:</label>
+            <input type="text" class="form-control" id="endereco" required />
+          </div>
+        </div>
 
-            <h4>Cabelos:</h4>
+        <h4>Cabelos:</h4>
 
-            <div class="form-group">
-                <label>Já fez ou faz uso de algum produto para tratamento capilar?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tratamentoCapilar" id="tratamentoCapilarSim"
-                        value="sim">
-                    <label class="form-check-label" for="tratamentoCapilarSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tratamentoCapilar" id="tratamentoCapilarNao"
-                        value="não">
-                    <label class="form-check-label" for="tratamentoCapilarNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="tratamentoCapilarTexto"
-                    placeholder="Descreva os produtos...">
-            </div>
+        <div class="form-group">
+          <label
+            >Já fez ou faz uso de algum produto para tratamento capilar?</label
+          ><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tratamentoCapilar"
+              id="tratamentoCapilarSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="tratamentoCapilarSim"
+              >Sim</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tratamentoCapilar"
+              id="tratamentoCapilarNao"
+              value="não"
+            />
+            <label class="form-check-label" for="tratamentoCapilarNao"
+              >Não</label
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="tratamentoCapilarTexto"
+            placeholder="Descreva os produtos..."
+          />
+        </div>
 
-            <div class="form-group">
-                <label>Com qual frequência lava os cabelos?</label><br>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="frequenciaLavar" id="frequencia1"
-                        value="1 vez ao dia">
-                    <label class="form-check-label" for="frequencia1">1 vez ao dia</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="frequenciaLavar" id="frequencia2"
-                        value="2 vezes ao dia">
-                    <label class="form-check-label" for="frequencia2">2 vezes ao dia</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="frequenciaLavar" id="frequencia3"
-                        value="dias alternados">
-                    <label class="form-check-label" for="frequencia3">Dias alternados</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="frequenciaLavar" id="frequenciaOutro"
-                        value="outro">
-                    <label class="form-check-label" for="frequenciaOutro">Outro</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="frequenciaLavarTexto"
-                    placeholder="Descreva a frequência...">
-            </div>
+        <div class="form-group">
+          <label>Com qual frequência lava os cabelos?</label><br />
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="frequenciaLavar"
+              id="frequencia1"
+              value="1 vez ao dia"
+            />
+            <label class="form-check-label" for="frequencia1"
+              >1 vez ao dia</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="frequenciaLavar"
+              id="frequencia2"
+              value="2 vezes ao dia"
+            />
+            <label class="form-check-label" for="frequencia2"
+              >2 vezes ao dia</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="frequenciaLavar"
+              id="frequencia3"
+              value="dias alternados"
+            />
+            <label class="form-check-label" for="frequencia3"
+              >Dias alternados</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="frequenciaLavar"
+              id="frequenciaOutro"
+              value="outro"
+            />
+            <label class="form-check-label" for="frequenciaOutro">Outro</label>
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="frequenciaLavarTexto"
+            placeholder="Descreva a frequência..."
+          />
+        </div>
 
-            <div class="form-group">
-                <label>Está com queda capilar e sentindo os fios cada vez mais finos?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="quedaCapilar" id="quedaCapilarSim" value="sim">
-                    <label class="form-check-label" for="quedaCapilarSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="quedaCapilar" id="quedaCapilarNao" value="não">
-                    <label class="form-check-label" for="quedaCapilarNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="quedaCapilarTexto"
-                    placeholder="Descreva o tempo...">
-            </div>
+        <div class="form-group">
+          <label
+            >Está com queda capilar e sentindo os fios cada vez mais
+            finos?</label
+          ><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="quedaCapilar"
+              id="quedaCapilarSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="quedaCapilarSim">Sim</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="quedaCapilar"
+              id="quedaCapilarNao"
+              value="não"
+            />
+            <label class="form-check-label" for="quedaCapilarNao">Não</label>
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="quedaCapilarTexto"
+            placeholder="Descreva o tempo..."
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="origemHereditária">Tem origem hereditária? Pai, mãe, avós...</label>
-                <input type="text" class="form-control" id="origemHereditária">
-            </div>
+        <div class="form-group">
+          <label for="origemHereditária"
+            >Tem origem hereditária? Pai, mãe, avós...</label
+          >
+          <input type="text" class="form-control" id="origemHereditária" />
+        </div>
 
-            <div class="form-group">
-                <label>Você considera seus cabelos:</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tipoCabelo" id="cabelosGrossos" value="grossos">
-                    <label class="form-check-label" for="cabelosGrossos">Grossos</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tipoCabelo" id="cabelosMedios" value="medios">
-                    <label class="form-check-label" for="cabelosMedios">Médios</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tipoCabelo" id="cabelosFinos" value="finos">
-                    <label class="form-check-label" for="cabelosFinos">Finos</label>
-                </div>
-            </div>
+        <div class="form-group">
+          <label>Você considera seus cabelos:</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoCabelo"
+              id="cabelosGrossos"
+              value="grossos"
+            />
+            <label class="form-check-label" for="cabelosGrossos">Grossos</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoCabelo"
+              id="cabelosMedios"
+              value="medios"
+            />
+            <label class="form-check-label" for="cabelosMedios">Médios</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoCabelo"
+              id="cabelosFinos"
+              value="finos"
+            />
+            <label class="form-check-label" for="cabelosFinos">Finos</label>
+          </div>
+        </div>
 
-            <div class="form-group">
-                <label>Saudável, com coceira, com caspa, com queda?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicaoCabelo" id="cabeloSaudavel"
-                        value="saudável">
-                    <label class="form-check-label" for="cabeloSaudavel">Saudável</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicaoCabelo" id="cabeloCoceira"
-                        value="coceira">
-                    <label class="form-check-label" for="cabeloCoceira">Com coceira</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicaoCabelo" id="cabeloCaspa" value="caspa">
-                    <label class="form-check-label" for="cabeloCaspa">Com caspa</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicaoCabelo" id="cabeloQueda" value="queda">
-                    <label class="form-check-label" for="cabeloQueda">Com queda</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicaoCabelo" id="cabeloOutro" value="outro">
-                    <label class="form-check-label" for="cabeloOutro">Outro</label>
-                </div>
-            </div>
+        <div class="form-group">
+          <label>Saudável, com coceira, com caspa, com queda?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicaoCabelo"
+              id="cabeloSaudavel"
+              value="saudável"
+            />
+            <label class="form-check-label" for="cabeloSaudavel"
+              >Saudável</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicaoCabelo"
+              id="cabeloCoceira"
+              value="coceira"
+            />
+            <label class="form-check-label" for="cabeloCoceira"
+              >Com coceira</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicaoCabelo"
+              id="cabeloCaspa"
+              value="caspa"
+            />
+            <label class="form-check-label" for="cabeloCaspa">Com caspa</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicaoCabelo"
+              id="cabeloQueda"
+              value="queda"
+            />
+            <label class="form-check-label" for="cabeloQueda">Com queda</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicaoCabelo"
+              id="cabeloOutro"
+              value="outro"
+            />
+            <label class="form-check-label" for="cabeloOutro">Outro</label>
+          </div>
+        </div>
 
-            <div class="form-group">
-                <label>Normal, oleoso ou seco?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tipoOleosidade" id="oleosidadeNormal"
-                        value="normal">
-                    <label class="form-check-label" for="oleosidadeNormal">Normal</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tipoOleosidade" id="oleosidadeOleoso"
-                        value="oleoso">
-                    <label class="form-check-label" for="oleosidadeOleoso">Oleoso</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tipoOleosidade" id="oleosidadeSeco" value="seco">
-                    <label class="form-check-label" for="oleosidadeSeco">Seco</label>
-                </div>
-            </div>
+        <div class="form-group">
+          <label>Normal, oleoso ou seco?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoOleosidade"
+              id="oleosidadeNormal"
+              value="normal"
+            />
+            <label class="form-check-label" for="oleosidadeNormal"
+              >Normal</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoOleosidade"
+              id="oleosidadeOleoso"
+              value="oleoso"
+            />
+            <label class="form-check-label" for="oleosidadeOleoso"
+              >Oleoso</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoOleosidade"
+              id="oleosidadeSeco"
+              value="seco"
+            />
+            <label class="form-check-label" for="oleosidadeSeco">Seco</label>
+          </div>
+        </div>
 
-            <h4>Saúde:</h4>
+        <h4>Saúde:</h4>
 
-            <div class="form-group">
-                <label>Tem alergia a algum cosmético?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="alergiaCosmetico" id="alergiaCosmeticoSim"
-                        value="sim">
-                    <label class="form-check-label" for="alergiaCosmeticoSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="alergiaCosmetico" id="alergiaCosmeticoNao"
-                        value="não">
-                    <label class="form-check-label" for="alergiaCosmeticoNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="alergiaCosmeticoTexto"
-                    placeholder="Descreva as alergias...">
-            </div>
+        <div class="form-group">
+          <label>Tem alergia a algum cosmético?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="alergiaCosmetico"
+              id="alergiaCosmeticoSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="alergiaCosmeticoSim"
+              >Sim</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="alergiaCosmetico"
+              id="alergiaCosmeticoNao"
+              value="não"
+            />
+            <label class="form-check-label" for="alergiaCosmeticoNao"
+              >Não</label
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="alergiaCosmeticoTexto"
+            placeholder="Descreva as alergias..."
+          />
+        </div>
 
-            <div class="form-group">
-                <label for="rotinaCabelos">Me conta um pouco sobre a sua rotina com os cabelos...</label>
-                <textarea class="form-control" id="rotinaCabelos" rows="3"></textarea>
-            </div>
+        <div class="form-group">
+          <label for="rotinaCabelos"
+            >Me conta um pouco sobre a sua rotina com os cabelos...</label
+          >
+          <textarea class="form-control" id="rotinaCabelos" rows="3"></textarea>
+        </div>
 
-            <div class="form-group">
-                <label>Tem alergia a algum medicamento?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="alergiaMedicamento" id="alergiaMedicamentoSim"
-                        value="sim">
-                    <label class="form-check-label" for="alergiaMedicamentoSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="alergiaMedicamento" id="alergiaMedicamentoNao"
-                        value="não">
-                    <label class="form-check-label" for="alergiaMedicamentoNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="alergiaMedicamentoTexto"
-                    placeholder="Descreva as alergias...">
-            </div>
+        <div class="form-group">
+          <label>Tem alergia a algum medicamento?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="alergiaMedicamento"
+              id="alergiaMedicamentoSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="alergiaMedicamentoSim"
+              >Sim</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="alergiaMedicamento"
+              id="alergiaMedicamentoNao"
+              value="não"
+            />
+            <label class="form-check-label" for="alergiaMedicamentoNao"
+              >Não</label
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="alergiaMedicamentoTexto"
+            placeholder="Descreva as alergias..."
+          />
+        </div>
 
-            <div class="form-group">
-                <label>Faz uso de algum medicamento? Qual frequência?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="usoMedicamento" id="usoMedicamentoSim"
-                        value="sim">
-                    <label class="form-check-label" for="usoMedicamentoSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="usoMedicamento" id="usoMedicamentoNao"
-                        value="não">
-                    <label class="form-check-label" for="usoMedicamentoNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="usoMedicamentoTexto"
-                    placeholder="Descreva os medicamentos e a frequência...">
-            </div>
+        <div class="form-group">
+          <label>Faz uso de algum medicamento? Qual frequência?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="usoMedicamento"
+              id="usoMedicamentoSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="usoMedicamentoSim">Sim</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="usoMedicamento"
+              id="usoMedicamentoNao"
+              value="não"
+            />
+            <label class="form-check-label" for="usoMedicamentoNao">Não</label>
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="usoMedicamentoTexto"
+            placeholder="Descreva os medicamentos e a frequência..."
+          />
+        </div>
 
-            <div class="form-group">
-                <label>Tem algum problema cardíaco?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="problemasCardiacos" id="problemaCardiacoSim"
-                        value="sim">
-                    <label class="form-check-label" for="problemaCardiacoSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="problemasCardiacos" id="problemaCardiacoSim"
-                        value="não">
-                    <label class="form-check-label" for="problemaCardiacoNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="problemasCardiacosTexto"
-                    placeholder="Descreva os medicamentos e a frequência...">
-            </div>
+        <div class="form-group">
+          <label>Tem algum problema cardíaco?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="problemasCardiacos"
+              id="problemaCardiacoSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="problemaCardiacoSim"
+              >Sim</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="problemasCardiacos"
+              id="problemaCardiacoSim"
+              value="não"
+            />
+            <label class="form-check-label" for="problemaCardiacoNao"
+              >Não</label
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="problemasCardiacosTexto"
+            placeholder="Descreva os medicamentos e a frequência..."
+          />
+        </div>
 
-            <div class="form-group">
-                <label>Trombose? Prótese? Placas? Pinos? Marca-passo?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicoesMedicas" id="condicoesMedicasSim"
-                        value="sim">
-                    <label class="form-check-label" for="condicoesMedicasSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicoesMedicas" id="condicoesMedicasNao"
-                        value="não">
-                    <label class="form-check-label" for="condicoesMedicasNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="condicoesMedicasTexto"
-                    placeholder="Descreva as condições...">
-            </div>
+        <div class="form-group">
+          <label>Trombose? Prótese? Placas? Pinos? Marca-passo?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicoesMedicas"
+              id="condicoesMedicasSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="condicoesMedicasSim"
+              >Sim</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicoesMedicas"
+              id="condicoesMedicasNao"
+              value="não"
+            />
+            <label class="form-check-label" for="condicoesMedicasNao"
+              >Não</label
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="condicoesMedicasTexto"
+            placeholder="Descreva as condições..."
+          />
+        </div>
 
-            <div class="form-group">
-                <label>Passou por alguma cirurgia recente?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cirurgiaRecente" id="cirurgiaRecenteSim"
-                        value="sim">
-                    <label class="form-check-label" for="cirurgiaRecenteSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="cirurgiaRecente" id="cirurgiaRecenteNao"
-                        value="não">
-                    <label class="form-check-label" for="cirurgiaRecenteNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="cirurgiaRecenteTexto" placeholder="Qual?">
-            </div>
+        <div class="form-group">
+          <label>Passou por alguma cirurgia recente?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="cirurgiaRecente"
+              id="cirurgiaRecenteSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="cirurgiaRecenteSim">Sim</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="cirurgiaRecente"
+              id="cirurgiaRecenteNao"
+              value="não"
+            />
+            <label class="form-check-label" for="cirurgiaRecenteNao">Não</label>
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="cirurgiaRecenteTexto"
+            placeholder="Qual?"
+          />
+        </div>
 
-            <div class="form-group">
-                <label>Costuma se estressar muito durante o dia?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="estresse" id="estresseSim" value="sim">
-                    <label class="form-check-label" for="estresseSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="estresse" id="estresseNao" value="não">
-                    <label class="form-check-label" for="estresseNao">Não</label>
-                </div>
-            </div>
+        <div class="form-group">
+          <label>Costuma se estressar muito durante o dia?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="estresse"
+              id="estresseSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="estresseSim">Sim</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="estresse"
+              id="estresseNao"
+              value="não"
+            />
+            <label class="form-check-label" for="estresseNao">Não</label>
+          </div>
+        </div>
 
-            <div class="form-group">
-                <label>Tem feito alguma dieta com restrições alimentares?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="dietaRestrita" id="dietaRestritaSim" value="sim">
-                    <label class="form-check-label" for="dietaRestritaSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="dietaRestrita" id="dietaRestritaNao" value="não">
-                    <label class="form-check-label" for="dietaRestritaNao">Não</label>
-                </div>
-            </div>
+        <div class="form-group">
+          <label>Tem feito alguma dieta com restrições alimentares?</label
+          ><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="dietaRestrita"
+              id="dietaRestritaSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="dietaRestritaSim">Sim</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="dietaRestrita"
+              id="dietaRestritaNao"
+              value="não"
+            />
+            <label class="form-check-label" for="dietaRestritaNao">Não</label>
+          </div>
+        </div>
 
-            <div class="form-group">
-                <label>Alguma condição auto imune?</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicaoAutoImune" id="condicaoAutoImuneSim"
-                        value="sim">
-                    <label class="form-check-label" for="condicaoAutoImuneSim">Sim</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="condicaoAutoImune" id="condicaoAutoImuneNao"
-                        value="não">
-                    <label class="form-check-label" for="condicaoAutoImuneNao">Não</label>
-                </div>
-                <input type="text" class="form-control conditional-input" id="condicaoAutoImuneTexto"
-                    placeholder="Descreva a condição...">
-            </div>
+        <div class="form-group">
+          <label>Alguma condição auto imune?</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicaoAutoImune"
+              id="condicaoAutoImuneSim"
+              value="sim"
+            />
+            <label class="form-check-label" for="condicaoAutoImuneSim"
+              >Sim</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="condicaoAutoImune"
+              id="condicaoAutoImuneNao"
+              value="não"
+            />
+            <label class="form-check-label" for="condicaoAutoImuneNao"
+              >Não</label
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control conditional-input"
+            id="condicaoAutoImuneTexto"
+            placeholder="Descreva a condição..."
+          />
+        </div>
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
